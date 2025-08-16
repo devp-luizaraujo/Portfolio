@@ -1,0 +1,472 @@
+nav {
+    position: fixed; 
+    width: 100%;
+    height: vh;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1b507b13;
+
+}
+
+.araujo{    
+    position: fixed;
+    align-items: left;
+}
+.araujo a {
+    display: inline-flex;
+    align-items: left;
+    font-family: Fira Code;
+    font-size: 35px;
+    color: #6ab2ec;
+    padding-right: 180vh;
+    text-indent: 30px;
+    padding-top: 10px;
+
+}
+
+nav li {
+    padding-right: 20px;
+}
+
+ 
+ul {
+     display: inline-flex;
+}
+
+ a {
+    font-size: 15px;
+     text-decoration: none;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 10px;
+     color: white;
+     font-family: Fira Code;
+ } 
+
+ #download {
+    height: 5vh;
+     background-color: #1b507b;
+     border-radius: 15px;
+     box-shadow: 0 0px 10px #2376b9; 
+    text-indent: 10px;
+ }
+ 
+ #download:hover {
+    background-color: #000000;
+    box-shadow: 0 5px 10px #07254a;
+    transform: scale(1.1);
+    transition: 0.3s;
+ }
+
+body{
+    height: 200vh;
+}
+
+
+.func {
+  color: #1b507b;
+  font-family: monospace;
+}
+
+
+.me {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 80px;
+    background-color: #00163a;
+}
+
+.name {
+ padding-left: 10vh;
+}
+
+.name h1 {
+    font-family: Fira Code;
+    font-size: 7.7vh;
+    margin-bottom: 10px;
+    color:  #ffffff;
+
+}
+
+.txt-animated {
+    font-size: 40px;
+    font-weight: 300px;
+}
+
+
+.txt-animated span{
+    position: relative;
+}
+
+.txt-animated span::before {
+    content: "";
+    color:#6ab2ec;
+    font-family: Doto;
+    animation: words 20s infinite;
+}
+
+.txt-animated span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #6ab2ec;
+    right: -10px;
+    animation: blink .8s infinite;
+    animation: type 20s steps(15) infinite;
+    width:calc(100% + 15px);
+    background-color: #00163a;
+}
+
+@keyframes blink {
+    0% {
+        border-left: 2px solid #00163a;
+    }
+    
+}
+
+@keyframes type {
+    10%, 15% ,30% ,35% ,50%,55%,75%,90%,95% {
+        width: 0;
+    }
+        5% , 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width:calc(100% + 15px);
+    }
+    
+}
+
+
+@keyframes words {
+    0%, 20% {
+        content: "Software Developer";
+    }
+    21%, 40% {
+        content: "Web Designer";
+    }
+    41%, 60% {
+        content: "Graphic Designer";
+    }
+    61% , 80% {
+        content: "Systems Analysis and Development student";
+    }
+    81%, 100% {
+        content: "Mobile Developer";
+    }
+}
+.name p {
+    font-family: Cascadia Code;
+    font-size: 2.5vh;
+    max-width: 600px; /* controla largura do texto */
+    line-height: 1.5; /* melhora leitura */
+    color: beige;
+    
+} 
+
+#oval {
+ 
+  margin-top: 50px;
+  margin-left: 50px;  
+  margin-bottom: 40px;
+  width: 50vh;           
+  height: 50vh;          
+  object-fit: cover;      /* recorta para manter proporção */
+  border-radius: 50%;     /* forma oval */
+  box-shadow: 0 5px 20px #6ab2ec; /* sombra */
+}
+
+#oval:hover {
+  transform: scale(1.05); /* leve aumento no tamanho */
+  transition: 0.2s;
+}
+
+.serv{
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 40px; /* espaço entre cards */
+  padding:  20px; /* respiro nas laterais */
+  background-color: #00163a;
+}
+
+.serv h1 {
+     text-align: center; /* Centraliza título */
+    font-family: Fira Code;
+    color: white;
+}
+
+
+
+.card {
+    background-color:#0e335b;
+    padding: 20px;
+    height: 20vh;
+    width: 54vh;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #000000;
+    box-shadow: 0 5px 10px #07254a;
+    transform: scale(1.05); /* leve aumento no tamanho */
+    transition: 0.2s;
+}
+
+.card h1 {
+    font-family: Fira Code;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+.card p {
+    font-family: Fira Code;
+    font-size: 15px;
+    max-width: 600px; /* controla largura do texto */
+    line-height: 1.5; /* melhora leitura */
+    text-align: center;
+    text-indent: 10px;
+    padding-right: 2px;
+}
+
+.esp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 30px;
+    height: 10vh;
+    background-color: #00163a;
+}
+
+.esp h1  {
+    font-family: Fira Code;
+    color: #6ab2ec;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.skills  {
+    background-color: #00163a;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    background-color: #14426b3f;
+    border-radius: 15px;
+    gap: 20px;
+    padding: 40px 40px 40px 40px;
+    margin: 20px;
+
+    } 
+
+
+.skill-card:hover {
+  background-color: #000000;
+  box-shadow: 0px 0px 10px #6ab2ec;
+  transform: rotateX(360deg); 
+  transition: 0.3s;
+}
+.skill-card {
+  background-color: #0e335b;
+  height: 12vh;
+  width: 10vh;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-card img {
+  max-width: 80px;
+
+}
+
+.skill-card p {
+ font-family: Fira Code;
+    font-size: 15px;
+    max-width: 600px; /* controla largura do texto */
+    line-height: 1.5; /* melhora leitura */
+    text-align: center;
+    text-indent: 10px;
+    padding-right: 2px;
+    color: #6ab2ec;
+}
+
+.esp2 {
+    font-family: Fira Code;
+    color:#6ab2ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 30px;
+    height: 10vh;
+    background-color: #07254a;
+}
+
+.timeline-section{
+	background-color: #07254a;
+	min-height: 50vh;
+	padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 10px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #6ab2ec;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+
+
+
+.timeline-dot2{
+	height: 16px;
+	width: 16px;
+	background-color: #6ab2ec;
+	position: absolute;
+	left: 495px;
+	border-radius: 50%;
+	top:10px;
+}
+
+
+.timeline-dot3{
+	height: 16px;
+	width: 16px;
+	background-color: #6ab2ec;
+	position: absolute;
+	left: 493px;
+	border-radius: 50%;
+	top:10px;
+}
+
+
+.timeline-dot4{
+	height: 16px;
+	width: 16px;
+	background-color: #6ab2ec;
+	position: absolute;
+	left: 492px;
+	border-radius: 50%;
+	
+}
+
+
+.timeline-date{
+    font-family: Fira Code;
+	font-size: 18px;
+	color: #6ab2ec;;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.timeline-content:hover{
+    background-color: #000000;
+    box-shadow: 0px 0px 10px #6ab2ec;
+    transform: scale(1.1);
+    transition: 0.2s;
+
+}
+.timeline-content h3{
+    font-family: Fira Code;
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    font-family: Fira Code;
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+.esp3 {
+    font-family: Fira Code;
+    color:#6ab2ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #00163a;
+}
+
+.esp3 h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-style: bold;
+    color: #1998ff;
+}
+
+.esp3 h1 {
+     font-size: 40px;
+
+}
+
+
+
+.icons  {
+    font-size: 40vh;
+     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+ footer {
+        color:#6ab2ec;
+        font-family: Fira Code;
+        bottom: 0;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        gap: 10px;
+        background-color: #00163a;
+ }
