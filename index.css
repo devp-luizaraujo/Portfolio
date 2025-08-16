@@ -97,6 +97,7 @@ body{
 .txt-animated {
     font-size: 40px;
     font-weight: 300px;
+	padding-bottom: 10px;
 }
 
 
@@ -475,3 +476,4 @@ body{
         background-color: #00163a;
 
  }
+
