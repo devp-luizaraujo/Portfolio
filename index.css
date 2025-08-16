@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
     position: fixed; 
     width: 100%;
@@ -469,4 +473,5 @@ body{
         justify-content: center;
         gap: 10px;
         background-color: #00163a;
+
  }
